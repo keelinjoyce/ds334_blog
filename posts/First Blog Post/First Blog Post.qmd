@@ -3,6 +3,7 @@ title: "Blog Post 1"
 author: "Keelin Joyce"
 date: "2026-02-06"
 categories: [code, analysis]
+
 ---
 
 ## Introduction
@@ -25,7 +26,7 @@ This dataset looks at 6,607 students and 19 factors that could possibly contribu
 library(readr)
 library(ggplot2)
 library(tidyverse)
-StudentPerformanceFactors <- read_csv("~/Desktop/334/dataviz334/ds334_blog/posts/Untitled/StudentPerformanceFactors.csv")
+StudentPerformanceFactors <- read_csv("~/Desktop/334/dataviz334/ds334_blog/posts/First Blog Post/StudentPerformanceFactors.csv")
 ```
 
 ## Question of Interest:
@@ -69,4 +70,5 @@ The plot visualizes the relationship between how many tutoring sessions a studen
 Of the many variables observed, only a few have any sort of visible correlation with how students score on an exam. To further analyze this data, statistical tests should be performed to confirm whether there are any associations that can not be determined from visualizations alone.
 
 ### Connection to Class Ideas
+
 The graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at.

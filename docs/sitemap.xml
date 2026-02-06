@@ -6,11 +6,15 @@
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/welcome/index.html</loc>
-    <lastmod>2026-01-28T18:55:45.879Z</lastmod>
+    <lastmod>2026-02-04T17:13:01.071Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/post-with-code/index.html</loc>
     <lastmod>2026-01-28T18:55:45.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/First Blog Post/First Blog Post.html</loc>
+    <lastmod>2026-02-06T16:58:14.704Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/index.html</loc>
