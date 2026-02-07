@@ -14,7 +14,7 @@
 <item>
   <title>Blog Post 1</title>
   <dc:creator>Keelin Joyce</dc:creator>
-  <link>https://your-website-url.example.com/posts/First Blog Post/First Blog Post.html</link>
+  <link>https://your-website-url.example.com/posts/First Blog Post/</link>
   <description><![CDATA[ 
 
 
@@ -27,10 +27,10 @@
 <table class="caption-top table">
 <caption>Variables included in “Student Academic Performance” dataset</caption>
 <colgroup>
-<col style="width: 26%">
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -154,7 +154,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/First-Blog-Post_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -167,14 +167,14 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/First-Blog-Post_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/First-Blog-Post_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -196,7 +196,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
  ]]></description>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://your-website-url.example.com/posts/First Blog Post/First Blog Post.html</guid>
+  <guid>https://your-website-url.example.com/posts/First Blog Post/</guid>
   <pubDate>Fri, 06 Feb 2026 05:00:00 GMT</pubDate>
 </item>
 <item>

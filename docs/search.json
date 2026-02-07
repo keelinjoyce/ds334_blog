@@ -21,29 +21,29 @@
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "posts/First Blog Post/First Blog Post.html",
-    "href": "posts/First Blog Post/First Blog Post.html",
+    "objectID": "posts/First Blog Post/index.html",
+    "href": "posts/First Blog Post/index.html",
     "title": "Blog Post 1",
     "section": "",
     "text": "This dataset looks at 6,607 students and 19 factors that could possibly contribute to exam score. This includes how much students slept and studied, the access to resources they have (including supportive parents and good teachers) and many other variables.\n\nVariables included in “Student Academic Performance” dataset\n\n\n\n\n\n\n\n\nHours Studied\nAttendance\nParental Involvement\nAccess to Resources\n\n\nExtracurricular Activities\nSleep Hours\nPrevious Scores\nMotivation Level\n\n\nInternet Access\nTutoring Sessions\nFamily Income\nTeacher Quality\n\n\nSchool Type\nPeer Influence\nPhysical Activity\nLearning Disabilites\n\n\nParental Education_Level\nDistance From Home\nGender\nExam Score\n\n\n\nhttps://www.kaggle.com/datasets/ayeshasiddiqa123/student-perfirmance\n\nlibrary(readr)\nlibrary(ggplot2)\nlibrary(tidyverse)\nStudentPerformanceFactors &lt;- read_csv(\"~/Desktop/334/dataviz334/ds334_blog/posts/First Blog Post/StudentPerformanceFactors.csv\")"
   },
   {
-    "objectID": "posts/First Blog Post/First Blog Post.html#introduction",
-    "href": "posts/First Blog Post/First Blog Post.html#introduction",
+    "objectID": "posts/First Blog Post/index.html#introduction",
+    "href": "posts/First Blog Post/index.html#introduction",
     "title": "Blog Post 1",
     "section": "",
     "text": "This dataset looks at 6,607 students and 19 factors that could possibly contribute to exam score. This includes how much students slept and studied, the access to resources they have (including supportive parents and good teachers) and many other variables.\n\nVariables included in “Student Academic Performance” dataset\n\n\n\n\n\n\n\n\nHours Studied\nAttendance\nParental Involvement\nAccess to Resources\n\n\nExtracurricular Activities\nSleep Hours\nPrevious Scores\nMotivation Level\n\n\nInternet Access\nTutoring Sessions\nFamily Income\nTeacher Quality\n\n\nSchool Type\nPeer Influence\nPhysical Activity\nLearning Disabilites\n\n\nParental Education_Level\nDistance From Home\nGender\nExam Score\n\n\n\nhttps://www.kaggle.com/datasets/ayeshasiddiqa123/student-perfirmance\n\nlibrary(readr)\nlibrary(ggplot2)\nlibrary(tidyverse)\nStudentPerformanceFactors &lt;- read_csv(\"~/Desktop/334/dataviz334/ds334_blog/posts/First Blog Post/StudentPerformanceFactors.csv\")"
   },
   {
-    "objectID": "posts/First Blog Post/First Blog Post.html#question-of-interest",
-    "href": "posts/First Blog Post/First Blog Post.html#question-of-interest",
+    "objectID": "posts/First Blog Post/index.html#question-of-interest",
+    "href": "posts/First Blog Post/index.html#question-of-interest",
     "title": "Blog Post 1",
     "section": "Question of Interest:",
     "text": "Question of Interest:\nWhich factors most directly impact the scores students get on an exam?"
   },
   {
-    "objectID": "posts/First Blog Post/First Blog Post.html#visualizations",
-    "href": "posts/First Blog Post/First Blog Post.html#visualizations",
+    "objectID": "posts/First Blog Post/index.html#visualizations",
+    "href": "posts/First Blog Post/index.html#visualizations",
     "title": "Blog Post 1",
     "section": "Visualizations",
     "text": "Visualizations\n\nExam Score relation to Hours Studied\n\nggplot(data = StudentPerformanceFactors, aes(x = Hours_Studied, y = Exam_Score, colour = Attendance)) +\n  geom_point() +\n  labs(title = \"Relationship between Hours Studied and Exam Score\", y = \"Exam Score\", x = \"Hours Studied\") +\n  geom_smooth(colour = \"black\") +\n  scale_color_viridis_c() +\n  theme_minimal()\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\n\n\n\n\nThe plot shows the relationship between how many hours a student studied for an exam and how well they scored. It displays a strong, positive correlation that explains that students that studied for longer typically scored higher on an exam. The colouring shows that class attendance and number of hours studied have the same general trend in exam scores. It also shows that there is not an association between attendance and hours studied, meaning that students that study for longer do not necessarily have better class attendance.\n\n\nExam Score relation to Number of Tutoring Sessions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe plot visualizes the relationship between how many tutoring sessions a student attended and how well they scored on the exam. Although there is not a strong positive relationship, there is still generally an increase in Exam Score for students that attend more tutoring sessions. The histogram shows that many went to only 0-3 tutoring sessions and there is not much data for those that went to more.\n\n\nConclusions\nOf the many variables observed, only a few have any sort of visible correlation with how students score on an exam. To further analyze this data, statistical tests should be performed to confirm whether there are any associations that can not be determined from visualizations alone.\n\n\nConnection to Class Ideas\nThe graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at."
