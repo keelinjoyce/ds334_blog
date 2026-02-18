@@ -1,0 +1,95 @@
+---
+title: "Blog Post 2"
+author: "Keelin Joyce"
+date: "2026-02-18"
+categories: [code, analysis]
+---
+
+## Introduction
+
+This dataset looks at 3,282 global chocolate sales from 2022 to 2025. It includes 6 variables per sale:
+
+|              |         |               |
+|--------------|---------|---------------|
+| Sales Person | Country | Product       |
+| Date         | Amount  | Boxes Shipped |
+
+: Variables included in dataset
+
+<https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales?resource=download>
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(ggplot2)
+library(tidyverse)
+ChocolateSales <- read_csv("~/Desktop/dataviz334/ds334_blog/posts/Untitled/ChocolateSales.csv") |> mutate(Amount = parse_number(Amount))
+```
+
+## Questions of Interest:
+
+What is the average price per box of chocolate in each country?
+
+Which countries are making the most chocolate sales by number of boxes?
+
+Which countries are making the most chocolate sales by amount of money?
+
+## Visualizations
+
+### Average Price per Box of Chocolate by Country
+
+```{r}
+ChocolateSalesPriceAvg <- ChocolateSales |> 
+  mutate(`Cost Per Box` = Amount / `Boxes Shipped`) |>
+  group_by(Country) |>
+  summarise(`Average Cost Per Box` = mean(`Cost Per Box`))
+ggplot(data = ChocolateSalesPriceAvg, aes(x = `Average Cost Per Box`, 
+                                          y = reorder(Country, `Average Cost Per Box`))) +
+  geom_col(fill = "plum") +
+  labs(title = "Average Price per Box of Chocolate by Country", y = "Country") +
+  theme_minimal()
+
+ChocolateSalesPrice <- ChocolateSales |> 
+  mutate(`Cost Per Box` = Amount / `Boxes Shipped`) |>
+  group_by(Country) 
+ggplot(data = ChocolateSalesPrice, aes(x = Country, 
+                                       y = `Cost Per Box`)) +
+  geom_jitter(colour = "forestgreen") +
+  labs(title = "Price per Box of Chocolate by Country") +
+  theme_minimal()
+```
+The first bar plot of means shows that Canada has the highest cost per box of chocolate by country, closely followed by the USA and New Zealand. Looking at the jitter plot, it is evident that most countries have a similar distribution, but Canada has a few extreme outliars that would skew the mean. Both plots together give a better idea of the average prices for a box of chocolates per country than either one on its own.
+
+### Total Chocolate Sales (in number of boxes sold) by Country
+
+```{r warning=FALSE, message=FALSE}
+ChocolateSalesTotal <- ChocolateSales |> group_by(Country) |> 
+  summarise(sum(`Boxes Shipped`))
+ggplot(data = ChocolateSalesTotal, aes(x = `sum(\`Boxes Shipped\`)`, 
+                    y = reorder(Country, `sum(\`Boxes Shipped\`)`))) +
+  geom_col(fill = "palevioletred1") +
+  labs(title = "Total Boxes of Chocolate sold by Country", x = "Boxes Shipped",
+       y = "Country") +
+  theme_minimal()
+```
+This plot shows the total number of boxes sold from 2022 to 2025. Australia has had the most sales with Canada, the UK, and India following close behind, respectively. Further analysis is included with the following visualization.
+
+### Total Chocolate Sales (in amount cost) by Country
+
+```{r warning=FALSE, message=FALSE}
+ChocolateSalesCost <-  ChocolateSales |> group_by(Country) |> 
+  summarise(sum(Amount))
+ggplot(data = ChocolateSalesCost, aes(x = `sum(Amount)`, 
+                    y = reorder(Country, `sum(Amount)`))) +
+  geom_col(fill = "mediumorchid3") +
+  labs(title = "Total Cost of Chocolate sold by Country", x = "Total Cost",
+       y = "Country") +
+  theme_minimal()
+```
+The plot shows the amount of money each country has sold in chocolate. Australia has sold the most, just as  was shown in the amount of boxes shipped plot. The main difference here is that Canada has dropped from second in the previous plot to fourth in this plot meaning that they have sold more boxes for lower prices.
+
+### Conclusions
+The plots each show something about how much 
+It is interesting to note that, despite Canada being at the top in average price per box of chocolate, they are also much higher (second) in total boxes sold than in total cost sold (fourth). This is interesting to note because this would imply that Canada has lower costs per box of chocolate (as they are selling more boxes yet less money), but earlier plot show that Canada has the highest average price per box of chocolates. This further demonstrates that it is important to look at many different visualizations as the same data can tell different stories depending on how it is displayed.
+
+### Connection to Class Ideas
+The first set of plots clearly shows when bar plots are a bad idea. They demonstrate the importance of using the right visualization when looking at only plots and not any data or statistical tests. All of the graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at.

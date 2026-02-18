@@ -7,18 +7,32 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/Untitled/index.html",
+    "href": "posts/Untitled/index.html",
+    "title": "Blog Post 2",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome.\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This dataset looks at 3,282 global chocolate sales from 2022 to 2025. It includes 6 variables per sale:\n\nVariables included in dataset\n\n\nSales Person\nCountry\nProduct\n\n\nDate\nAmount\nBoxes Shipped\n\n\n\nhttps://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales?resource=download\n\nlibrary(readr)\nlibrary(ggplot2)\nlibrary(tidyverse)\nChocolateSales &lt;- read_csv(\"~/Desktop/dataviz334/ds334_blog/posts/Untitled/ChocolateSales.csv\") |&gt; mutate(Amount = parse_number(Amount))"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/Untitled/index.html#introduction",
+    "href": "posts/Untitled/index.html#introduction",
+    "title": "Blog Post 2",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "This dataset looks at 3,282 global chocolate sales from 2022 to 2025. It includes 6 variables per sale:\n\nVariables included in dataset\n\n\nSales Person\nCountry\nProduct\n\n\nDate\nAmount\nBoxes Shipped\n\n\n\nhttps://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales?resource=download\n\nlibrary(readr)\nlibrary(ggplot2)\nlibrary(tidyverse)\nChocolateSales &lt;- read_csv(\"~/Desktop/dataviz334/ds334_blog/posts/Untitled/ChocolateSales.csv\") |&gt; mutate(Amount = parse_number(Amount))"
+  },
+  {
+    "objectID": "posts/Untitled/index.html#questions-of-interest",
+    "href": "posts/Untitled/index.html#questions-of-interest",
+    "title": "Blog Post 2",
+    "section": "Questions of Interest:",
+    "text": "Questions of Interest:\nWhat is the average price per box of chocolate in each country?\nWhich countries are making the most chocolate sales by number of boxes?\nWhich countries are making the most chocolate sales by amount of money?"
+  },
+  {
+    "objectID": "posts/Untitled/index.html#visualizations",
+    "href": "posts/Untitled/index.html#visualizations",
+    "title": "Blog Post 2",
+    "section": "Visualizations",
+    "text": "Visualizations\n\nAverage Price per Box of Chocolate by Country\n\nChocolateSalesPriceAvg &lt;- ChocolateSales |&gt; \n  mutate(`Cost Per Box` = Amount / `Boxes Shipped`) |&gt;\n  group_by(Country) |&gt;\n  summarise(`Average Cost Per Box` = mean(`Cost Per Box`))\nggplot(data = ChocolateSalesPriceAvg, aes(x = `Average Cost Per Box`, \n                                          y = reorder(Country, `Average Cost Per Box`))) +\n  geom_col(fill = \"plum\") +\n  labs(title = \"Average Price per Box of Chocolate by Country\", y = \"Country\") +\n  theme_minimal()\n\n\n\n\n\n\n\nChocolateSalesPrice &lt;- ChocolateSales |&gt; \n  mutate(`Cost Per Box` = Amount / `Boxes Shipped`) |&gt;\n  group_by(Country) \nggplot(data = ChocolateSalesPrice, aes(x = Country, \n                                       y = `Cost Per Box`)) +\n  geom_jitter(colour = \"forestgreen\") +\n  labs(title = \"Price per Box of Chocolate by Country\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThe first bar plot of means shows that Canada has the highest cost per box of chocolate by country, closely followed by the USA and New Zealand. Looking at the jitter plot, it is evident that most countries have a similar distribution, but Canada has a few extreme outliars that would skew the mean. Both plots together give a better idea of the average prices for a box of chocolates per country than either one on its own.\n\n\nTotal Chocolate Sales (in number of boxes sold) by Country\n\nChocolateSalesTotal &lt;- ChocolateSales |&gt; group_by(Country) |&gt; \n  summarise(sum(`Boxes Shipped`))\nggplot(data = ChocolateSalesTotal, aes(x = `sum(\\`Boxes Shipped\\`)`, \n                    y = reorder(Country, `sum(\\`Boxes Shipped\\`)`))) +\n  geom_col(fill = \"palevioletred1\") +\n  labs(title = \"Total Boxes of Chocolate sold by Country\", x = \"Boxes Shipped\",\n       y = \"Country\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThis plot shows the total number of boxes sold from 2022 to 2025. Australia has had the most sales with Canada, the UK, and India following close behind, respectively. Further analysis is included with the following visualization.\n\n\nTotal Chocolate Sales (in amount cost) by Country\n\nChocolateSalesCost &lt;-  ChocolateSales |&gt; group_by(Country) |&gt; \n  summarise(sum(Amount))\nggplot(data = ChocolateSalesCost, aes(x = `sum(Amount)`, \n                    y = reorder(Country, `sum(Amount)`))) +\n  geom_col(fill = \"mediumorchid3\") +\n  labs(title = \"Total Cost of Chocolate sold by Country\", x = \"Total Cost\",\n       y = \"Country\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThe plot shows the amount of money each country has sold in chocolate. Australia has sold the most, just as was shown in the amount of boxes shipped plot. The main difference here is that Canada has dropped from second in the previous plot to fourth in this plot meaning that they have sold more boxes for lower prices.\n\n\nConclusions\nThe plots each show something about how much It is interesting to note that, despite Canada being at the top in average price per box of chocolate, they are also much higher (second) in total boxes sold than in total cost sold (fourth). This is interesting to note because this would imply that Canada has lower costs per box of chocolate (as they are selling more boxes yet less money), but earlier plot show that Canada has the highest average price per box of chocolates. This further demonstrates that it is important to look at many different visualizations as the same data can tell different stories depending on how it is displayed.\n\n\nConnection to Class Ideas\nThe first set of plots clearly shows when bar plots are a bad idea. They demonstrate the importance of using the right visualization when looking at only plots and not any data or statistical tests. All of the graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at."
   },
   {
     "objectID": "posts/First Blog Post/index.html",
@@ -49,10 +63,24 @@
     "text": "Visualizations\n\nExam Score relation to Hours Studied\n\nggplot(data = StudentPerformanceFactors, aes(x = Hours_Studied, y = Exam_Score, colour = Attendance)) +\n  geom_point() +\n  labs(title = \"Relationship between Hours Studied and Exam Score\", y = \"Exam Score\", x = \"Hours Studied\") +\n  geom_smooth(colour = \"black\") +\n  scale_color_viridis_c() +\n  theme_minimal()\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\n\n\n\n\nThe plot shows the relationship between how many hours a student studied for an exam and how well they scored. It displays a strong, positive correlation that explains that students that studied for longer typically scored higher on an exam. The colouring shows that class attendance and number of hours studied have the same general trend in exam scores. It also shows that there is not an association between attendance and hours studied, meaning that students that study for longer do not necessarily have better class attendance.\n\n\nExam Score relation to Number of Tutoring Sessions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe plot visualizes the relationship between how many tutoring sessions a student attended and how well they scored on the exam. Although there is not a strong positive relationship, there is still generally an increase in Exam Score for students that attend more tutoring sessions. The histogram shows that many went to only 0-3 tutoring sessions and there is not much data for those that went to more.\n\n\nConclusions\nOf the many variables observed, only a few have any sort of visible correlation with how students score on an exam. To further analyze this data, statistical tests should be performed to confirm whether there are any associations that can not be determined from visualizations alone.\n\n\nConnection to Class Ideas\nThe graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at."
   },
   {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome.\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ds334_blog",
     "section": "",
-    "text": "Blog Post 1\n\n\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nFeb 6, 2026\n\n\nKeelin Joyce\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 25, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "Blog Post 2\n\n\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nFeb 18, 2026\n\n\nKeelin Joyce\n\n\n\n\n\n\n\n\n\n\n\n\nBlog Post 1\n\n\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nFeb 6, 2026\n\n\nKeelin Joyce\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 25, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
   }
 ]
