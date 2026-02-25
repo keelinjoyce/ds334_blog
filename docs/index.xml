@@ -5,16 +5,16 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>ds334_blog</title>
+<title>Data Visualization 334 Blog</title>
 <link>https://your-website-url.example.com/</link>
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Wed, 18 Feb 2026 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>Blog Post 2</title>
+  <title>Chocolate Sales by Country</title>
   <dc:creator>Keelin Joyce</dc:creator>
-  <link>https://your-website-url.example.com/posts/Untitled/</link>
+  <link>https://your-website-url.example.com/posts/Chocolate Sales by Country/</link>
   <description><![CDATA[ 
 
 
@@ -56,7 +56,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"~/Desktop/dataviz334/ds334_blog/posts/Untitled/ChocolateSales.csv"</span>) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">"~/Desktop/dataviz334/ds334_blog/posts/Chocolate Sales by Country/ChocolateSales.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -184,7 +184,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Untitled/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Chocolate Sales by Country/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -261,7 +261,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Untitled/index_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Chocolate Sales by Country/index_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -364,7 +364,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Untitled/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Chocolate Sales by Country/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -449,7 +449,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Untitled/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Chocolate Sales by Country/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -471,13 +471,13 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
  ]]></description>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://your-website-url.example.com/posts/Untitled/</guid>
+  <guid>https://your-website-url.example.com/posts/Chocolate Sales by Country/</guid>
   <pubDate>Wed, 18 Feb 2026 05:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Blog Post 1</title>
+  <title>Factors impacting Student Success</title>
   <dc:creator>Keelin Joyce</dc:creator>
-  <link>https://your-website-url.example.com/posts/First Blog Post/</link>
+  <link>https://your-website-url.example.com/posts/Factors impacting Student Success/</link>
   <description><![CDATA[ 
 
 
@@ -545,7 +545,7 @@ font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"~/Desktop/334/dataviz334/ds334_blog/posts/First Blog Post/StudentPerformanceFactors.csv"</span>)</span></code></pre></div></div>
+font-style: inherit;">"~/Desktop/dataviz334/ds334_blog/posts/Factors impacting Student Success/StudentPerformanceFactors.csv"</span>)</span></code></pre></div></div>
 </div>
 </section>
 <section id="question-of-interest" class="level2">
@@ -617,7 +617,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Factors impacting Student Success/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -630,14 +630,14 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Factors impacting Student Success/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/First Blog Post/index_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://your-website-url.example.com/posts/Factors impacting Student Success/index_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -659,7 +659,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
  ]]></description>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://your-website-url.example.com/posts/First Blog Post/</guid>
+  <guid>https://your-website-url.example.com/posts/Factors impacting Student Success/</guid>
   <pubDate>Fri, 06 Feb 2026 05:00:00 GMT</pubDate>
 </item>
 <item>

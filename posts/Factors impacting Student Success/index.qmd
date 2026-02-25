@@ -1,5 +1,5 @@
 ---
-title: "Blog Post 1"
+title: "Factors impacting Student Success"
 author: "Keelin Joyce"
 date: "2026-02-06"
 categories: [code, analysis]
@@ -10,7 +10,7 @@ categories: [code, analysis]
 This dataset looks at 6,607 students and 19 factors that could possibly contribute to exam score. This includes how much students slept and studied, the access to resources they have (including supportive parents and good teachers) and many other variables.
 
 |  |  |  |  |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | Hours Studied | Attendance | Parental Involvement | Access to Resources |
 | Extracurricular Activities | Sleep Hours | Previous Scores | Motivation Level |
 | Internet Access | Tutoring Sessions | Family Income | Teacher Quality |
@@ -25,7 +25,7 @@ This dataset looks at 6,607 students and 19 factors that could possibly contribu
 library(readr)
 library(ggplot2)
 library(tidyverse)
-StudentPerformanceFactors <- read_csv("~/Desktop/334/dataviz334/ds334_blog/posts/First Blog Post/StudentPerformanceFactors.csv")
+StudentPerformanceFactors <- read_csv("~/Desktop/dataviz334/ds334_blog/posts/Factors impacting Student Success/StudentPerformanceFactors.csv")
 ```
 
 ## Question of Interest:

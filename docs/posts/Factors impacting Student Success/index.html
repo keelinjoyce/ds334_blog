@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Keelin Joyce">
-<meta name="dcterms.date" content="2026-02-18">
+<meta name="dcterms.date" content="2026-02-06">
 
-<title>Blog Post 2 – ds334_blog</title>
+<title>Factors impacting Student Success – Data Visualization 334 Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-26827f95213357c060b998e0666f8ebe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">ds334_blog</span>
+    <span class="navbar-title">Data Visualization 334 Blog</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -131,15 +131,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">About this Blog</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/keelinjoyce"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://linkedin.com/in/keelinjoyce"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Blog Post 2</h1>
+      <h1 class="title">Factors impacting Student Success</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">code</div>
                 <div class="quarto-category">analysis</div>
@@ -175,7 +175,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 18, 2026</p>
+        <p class="date">February 6, 2026</p>
       </div>
     </div>
     
@@ -196,50 +196,74 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This dataset looks at 3,282 global chocolate sales from 2022 to 2025. It includes 6 variables per sale:</p>
+<p>This dataset looks at 6,607 students and 19 factors that could possibly contribute to exam score. This includes how much students slept and studied, the access to resources they have (including supportive parents and good teachers) and many other variables.</p>
 <table class="caption-top table">
-<caption>Variables included in dataset</caption>
+<caption>Variables included in “Student Academic Performance” dataset</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <tbody>
 <tr class="odd">
-<td>Sales Person</td>
-<td>Country</td>
-<td>Product</td>
+<td>Hours Studied</td>
+<td>Attendance</td>
+<td>Parental Involvement</td>
+<td>Access to Resources</td>
 </tr>
 <tr class="even">
-<td>Date</td>
-<td>Amount</td>
-<td>Boxes Shipped</td>
+<td>Extracurricular Activities</td>
+<td>Sleep Hours</td>
+<td>Previous Scores</td>
+<td>Motivation Level</td>
+</tr>
+<tr class="odd">
+<td>Internet Access</td>
+<td>Tutoring Sessions</td>
+<td>Family Income</td>
+<td>Teacher Quality</td>
+</tr>
+<tr class="even">
+<td>School Type</td>
+<td>Peer Influence</td>
+<td>Physical Activity</td>
+<td>Learning Disabilites</td>
+</tr>
+<tr class="odd">
+<td>Parental Education_Level</td>
+<td>Distance From Home</td>
+<td>Gender</td>
+<td>Exam Score</td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales?resource=download" class="uri">https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales?resource=download</a></p>
+<p><a href="https://www.kaggle.com/datasets/ayeshasiddiqa123/student-perfirmance" class="uri">https://www.kaggle.com/datasets/ayeshasiddiqa123/student-perfirmance</a></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>ChocolateSales <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/Desktop/dataviz334/ds334_blog/posts/Untitled/ChocolateSales.csv"</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">Amount =</span> <span class="fu">parse_number</span>(Amount))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>StudentPerformanceFactors <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/Desktop/dataviz334/ds334_blog/posts/Factors impacting Student Success/StudentPerformanceFactors.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="questions-of-interest" class="level2">
-<h2 class="anchored" data-anchor-id="questions-of-interest">Questions of Interest:</h2>
-<p>What is the average price per box of chocolate in each country?</p>
-<p>Which countries are making the most chocolate sales by number of boxes?</p>
-<p>Which countries are making the most chocolate sales by amount of money?</p>
+<section id="question-of-interest" class="level2">
+<h2 class="anchored" data-anchor-id="question-of-interest">Question of Interest:</h2>
+<p>Which factors most directly impact the scores students get on an exam?</p>
 </section>
 <section id="visualizations" class="level2">
 <h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
-<section id="average-price-per-box-of-chocolate-by-country" class="level3">
-<h3 class="anchored" data-anchor-id="average-price-per-box-of-chocolate-by-country">Average Price per Box of Chocolate by Country</h3>
+<section id="exam-score-relation-to-hours-studied" class="level3">
+<h3 class="anchored" data-anchor-id="exam-score-relation-to-hours-studied">Exam Score relation to Hours Studied</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ChocolateSalesPriceAvg <span class="ot">&lt;-</span> ChocolateSales <span class="sc">|&gt;</span> </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Cost Per Box</span><span class="st">`</span> <span class="ot">=</span> Amount <span class="sc">/</span> <span class="st">`</span><span class="at">Boxes Shipped</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Country) <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="st">`</span><span class="at">Average Cost Per Box</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">mean</span>(<span class="st">`</span><span class="at">Cost Per Box</span><span class="st">`</span>))</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ChocolateSalesPriceAvg, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Average Cost Per Box</span><span class="st">`</span>, </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">y =</span> <span class="fu">reorder</span>(Country, <span class="st">`</span><span class="at">Average Cost Per Box</span><span class="st">`</span>))) <span class="sc">+</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"plum"</span>) <span class="sc">+</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Average Price per Box of Chocolate by Country"</span>, <span class="at">y =</span> <span class="st">"Country"</span>) <span class="sc">+</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> StudentPerformanceFactors, <span class="fu">aes</span>(<span class="at">x =</span> Hours_Studied, <span class="at">y =</span> Exam_Score, <span class="at">colour =</span> Attendance)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relationship between Hours Studied and Exam Score"</span>, <span class="at">y =</span> <span class="st">"Exam Score"</span>, <span class="at">x =</span> <span class="st">"Hours Studied"</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">colour =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis_c</span>() <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -247,35 +271,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ChocolateSalesPrice <span class="ot">&lt;-</span> ChocolateSales <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Cost Per Box</span><span class="st">`</span> <span class="ot">=</span> Amount <span class="sc">/</span> <span class="st">`</span><span class="at">Boxes Shipped</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Country) </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ChocolateSalesPrice, <span class="fu">aes</span>(<span class="at">x =</span> Country, </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">y =</span> <span class="st">`</span><span class="at">Cost Per Box</span><span class="st">`</span>)) <span class="sc">+</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">colour =</span> <span class="st">"forestgreen"</span>) <span class="sc">+</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Price per Box of Chocolate by Country"</span>) <span class="sc">+</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
 </div>
-</div>
-</div>
-<p>The first bar plot of means shows that Canada has the highest cost per box of chocolate by country, closely followed by the USA and New Zealand. Looking at the jitter plot, it is evident that most countries have a similar distribution, but Canada has a few extreme outliars that would skew the mean. Both plots together give a better idea of the average prices for a box of chocolates per country than either one on its own.</p>
+<p>The plot shows the relationship between how many hours a student studied for an exam and how well they scored. It displays a strong, positive correlation that explains that students that studied for longer typically scored higher on an exam. The colouring shows that class attendance and number of hours studied have the same general trend in exam scores. It also shows that there is not an association between attendance and hours studied, meaning that students that study for longer do not necessarily have better class attendance.</p>
 </section>
-<section id="total-chocolate-sales-in-number-of-boxes-sold-by-country" class="level3">
-<h3 class="anchored" data-anchor-id="total-chocolate-sales-in-number-of-boxes-sold-by-country">Total Chocolate Sales (in number of boxes sold) by Country</h3>
+<section id="exam-score-relation-to-number-of-tutoring-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="exam-score-relation-to-number-of-tutoring-sessions">Exam Score relation to Number of Tutoring Sessions</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>ChocolateSalesTotal <span class="ot">&lt;-</span> ChocolateSales <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Country) <span class="sc">|&gt;</span> </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">sum</span>(<span class="st">`</span><span class="at">Boxes Shipped</span><span class="st">`</span>))</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ChocolateSalesTotal, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">sum(\</span><span class="st">`</span>Boxes Shipped\<span class="st">`</span><span class="at">)</span><span class="st">`</span>, </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> <span class="fu">reorder</span>(Country, <span class="st">`</span><span class="at">sum(\</span><span class="st">`</span>Boxes Shipped\<span class="st">`</span><span class="at">)</span><span class="st">`</span>))) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"palevioletred1"</span>) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Total Boxes of Chocolate sold by Country"</span>, <span class="at">x =</span> <span class="st">"Boxes Shipped"</span>,</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Country"</span>) <span class="sc">+</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -283,37 +284,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-</div>
-<p>This plot shows the total number of boxes sold from 2022 to 2025. Australia has had the most sales with Canada, the UK, and India following close behind, respectively. Further analysis is included with the following visualization.</p>
-</section>
-<section id="total-chocolate-sales-in-amount-cost-by-country" class="level3">
-<h3 class="anchored" data-anchor-id="total-chocolate-sales-in-amount-cost-by-country">Total Chocolate Sales (in amount cost) by Country</h3>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ChocolateSalesCost <span class="ot">&lt;-</span>  ChocolateSales <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Country) <span class="sc">|&gt;</span> </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">sum</span>(Amount))</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ChocolateSalesCost, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">sum(Amount)</span><span class="st">`</span>, </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> <span class="fu">reorder</span>(Country, <span class="st">`</span><span class="at">sum(Amount)</span><span class="st">`</span>))) <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"mediumorchid3"</span>) <span class="sc">+</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Total Cost of Chocolate sold by Country"</span>, <span class="at">x =</span> <span class="st">"Total Cost"</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Country"</span>) <span class="sc">+</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The plot shows the amount of money each country has sold in chocolate. Australia has sold the most, just as was shown in the amount of boxes shipped plot. The main difference here is that Canada has dropped from second in the previous plot to fourth in this plot meaning that they have sold more boxes for lower prices.</p>
+<p>The plot visualizes the relationship between how many tutoring sessions a student attended and how well they scored on the exam. Although there is not a strong positive relationship, there is still generally an increase in Exam Score for students that attend more tutoring sessions. The histogram shows that many went to only 0-3 tutoring sessions and there is not much data for those that went to more.</p>
 </section>
 <section id="conclusions" class="level3">
 <h3 class="anchored" data-anchor-id="conclusions">Conclusions</h3>
-<p>The plots each show something about how much It is interesting to note that, despite Canada being at the top in average price per box of chocolate, they are also much higher (second) in total boxes sold than in total cost sold (fourth). This is interesting to note because this would imply that Canada has lower costs per box of chocolate (as they are selling more boxes yet less money), but earlier plot show that Canada has the highest average price per box of chocolates. This further demonstrates that it is important to look at many different visualizations as the same data can tell different stories depending on how it is displayed.</p>
+<p>Of the many variables observed, only a few have any sort of visible correlation with how students score on an exam. To further analyze this data, statistical tests should be performed to confirm whether there are any associations that can not be determined from visualizations alone.</p>
 </section>
 <section id="connection-to-class-ideas" class="level3">
 <h3 class="anchored" data-anchor-id="connection-to-class-ideas">Connection to Class Ideas</h3>
-<p>The first set of plots clearly shows when bar plots are a bad idea. They demonstrate the importance of using the right visualization when looking at only plots and not any data or statistical tests. All of the graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at.</p>
+<p>The graphs demonstrate concepts learned in class of appropriate colour schemes, colouring by variables, and fixing aesthetics to create a better visualization. I utilized concepts from the grammar of graphics unit to enhance the visualizations and make them both easier and more appealing to look at.</p>
 
 
 </section>

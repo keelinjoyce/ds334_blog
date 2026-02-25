@@ -1,19 +1,15 @@
 ---
-title: "About"
-image: profile.jpg
+title: "About this Blog"
+image: about.image2
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com
     - icon: github
       text: Github
       href: https://github.com
-
 ---
 
-About this blog
+This blog is an accumulation of projects developed in Data Visualization 334 at St. Lawrence University
